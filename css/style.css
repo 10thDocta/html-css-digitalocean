@@ -1,3 +1,124 @@
+a {
+  color: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* MIX */
+/* color */
+.blue {
+  color: #006AFF;
+}
+
+.black {
+  color: black;
+}
+
+.dark_blue {
+  color: #031C4E;
+}
+
+.white {
+  color: white;
+}
+
+/* HEADER */
+.header_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background-color: white;
+}
+
+.logo {
+  width: 150px;
+}
+
+.header_top a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  height: 500px;
+  margin-top: 70px;
+  background-color: blue;
+}
+
+.hero>.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero_text p {
+  font-size: 22px;
+  opacity: .8
+}
+
+.box_white {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.btn_hero {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 4px;
+}
+
+.btn_blue {
+  background-color: #579AFF;
+  color: white;
+}
+
+.btn_white {
+  background-color: white;
+  color: #626262;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.btn_google {
+  position: relative;
+  margin-top: 6px;
+}
+
+.logo_google {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  margin-left: 8px;
+}
+
+.small {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.small a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 58px;
+  }
 }
