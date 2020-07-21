@@ -55,6 +55,11 @@ main p, footer p {
 }
 
 /* mix */
+.btn:hover {
+  background-color: #348FFD;
+  color: white;
+}
+
 .carousel_slide .list-inline li a {
   display: inline-block;
   width: 10px;
@@ -66,6 +71,15 @@ main p, footer p {
 
 .carousel_slide .list-inline li:first-child a {
   background-color: #006AFF
+}
+
+.link {
+  font-weight: 500;
+}
+
+.padding_tb {
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 /**** HEADER ****/
@@ -87,6 +101,14 @@ main p, footer p {
 .header_top a {
   font-size: 16px;
   font-weight: 500;
+}
+
+.header_top i {
+  margin-left: 2px;
+}
+
+.header_top .btn {
+  border: 1px solid;
 }
 
 /* hero */
@@ -156,10 +178,7 @@ main p, footer p {
 
 /**** MAIN ****/
 /* trust logo section */
-#trust_logos {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
+#trust_logos {}
 
 #trust_logos h5 {
   color: #7B86A0;
@@ -172,6 +191,30 @@ main p, footer p {
 
 /* deploy section */
 #deploy {}
+
+.deploy_menu {
+  margin-bottom: 30px;
+}
+
+.deploy_menu li {
+  border-left: 2px solid;
+  padding: 11px 7px;
+  font-size: 17px;
+}
+
+.deploy_menu li:first-child {
+  padding-top: 4px;
+}
+
+.deploy_menu li:last-child {
+  padding-bottom: 4px;
+}
+
+.deploy_menu li:hover {
+  border-left: 3px solid #006AFF;
+  color: #031C4E;
+  font-weight: 500;
+}
 
 /* designed section */
 #designed {}
@@ -224,23 +267,46 @@ div>.service_list:not(:last-child) {
 }
 
 /* get_start */
-#get_start {
-  padding-top: 10px;
-  padding-bottom: 25px;
-}
+#get_start {}
 
 #get_start .btn {
   background-color: white;
   color: #006AFF;
+  margin-top: 5px;
+}
+
+#get_start .btn:hover {
+  background-color: #006AFF;
+  color: white;
 }
 
 /**** FOOTER ****/
 footer {
   background-color: #031C4E;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer .row>div {
+  margin-bottom: 20px;
 }
 
 footer .social_logo {
   font-size: 20px;
+}
+
+footer .info li:not(.white) {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer .info .white {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer .info a {
+  font-size: 15px;
 }
 
 /**************************
@@ -285,5 +351,9 @@ MEDIA QUERY
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 58px;
+  }
+
+  .deploy_menu {
+    margin-left: 30%;
   }
 }
