@@ -15,6 +15,14 @@ h1 {
   margin-bottom: 15px;
 }
 
+h2 {
+  font-weight: 700;
+}
+
+#features h2, #service h2, #dev_teams h2 {
+  margin-bottom: 30px;
+}
+
 h5 {
   color: #031C4E;
 }
@@ -55,9 +63,10 @@ main p, footer p {
 }
 
 /* mix */
-.btn:hover {
-  background-color: #348FFD;
-  color: white;
+.font_18 {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 
 .carousel_slide .list-inline li a {
@@ -101,6 +110,15 @@ main p, footer p {
 .header_top a {
   font-size: 16px;
   font-weight: 500;
+}
+
+.header_top a:hover {
+  color: #006AFF;
+}
+
+.header_top .btn:hover {
+  background-color: #348FFD;
+  color: white;
 }
 
 .header_top i {
@@ -216,8 +234,23 @@ main p, footer p {
   font-weight: 500;
 }
 
+.deploy_items {
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
 /* designed section */
 #designed {}
+
+#designed .row p {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* features */
+#features .row>div {
+  margin-bottom: 15px;
+}
 
 /* service */
 div>.service_list:not(:last-child) {
@@ -266,8 +299,23 @@ div>.service_list:not(:last-child) {
   margin-bottom: 15px;
 }
 
+.carousel_text_box>p:first-of-type {
+  font-size: 16px;
+}
+
+.carousel_text_box span {
+  font-weight: 500;
+}
+
+.carousel_slide .list-inline {
+  margin-top: 15px;
+}
+
 /* get_start */
-#get_start {}
+#get_start {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
 
 #get_start .btn {
   background-color: white;
@@ -291,7 +339,17 @@ footer .row>div {
   margin-bottom: 20px;
 }
 
-footer .social_logo {
+.footer_logo {
+  margin-bottom: 7px;
+}
+
+.footer_logo+p {
+  margin-bottom: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.social_logo {
   font-size: 20px;
 }
 
