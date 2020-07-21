@@ -2,6 +2,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +22,6 @@ main p, footer p {
   color: #7B86A0;
 }
 
-/* MIX */
 /* text colors */
 .blue {
   color: #006AFF;
@@ -37,8 +40,27 @@ main p, footer p {
 }
 
 /* background colors */
+.bg_gradient_blue {
+  background: rgb(0, 72, 198);
+  background: linear-gradient(184deg, rgba(0, 72, 198, 1) 35%, rgba(0, 30, 154, 1) 100%);
+}
+
 .bg_light_grey {
   background-color: #F3F5F9;
+}
+
+/* mix */
+.carousel_slide .list-inline li a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: #006AFF;
+}
+
+.carousel_slide .list-inline li:first-child a {
+  background-color: #006AFF
 }
 
 /**** HEADER ****/
@@ -149,19 +171,100 @@ main p, footer p {
 /* designed section */
 #designed {}
 
-#designed .list-inline a {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: pink;
+/* service */
+div>.service_list:not(:last-child) {
+  border-bottom: 1px solid white;
 }
 
-/**** MEDIA QUERY ****/
+.row>div:first-child>.service_list:last-child {
+  margin-bottom: 30px;
+}
+
+.service_list li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.service_list .city_code {
+  width: 10%;
+}
+
+.service_list .city {
+  width: 58%;
+  padding-left: 25px;
+  color: #AEBDE3;
+}
+
+.service_list .speed {
+  width: 30%;
+  text-align: right;
+}
+
+.service_list .speed a:hover {
+  color: white;
+  border-radius: 3%;
+  padding: 15px 0;
+}
+
+/* dev_teams */
+.carousel_text_box {
+  min-height: 200px;
+  background-color: white;
+  padding: 20px;
+}
+
+.carousel_text_box img {
+  max-height: 50px;
+  margin-bottom: 15px;
+}
+
+/* get_start */
+#get_start {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+#get_start .btn {
+  background-color: white;
+  color: #006AFF;
+}
+
+/**************************
+MEDIA QUERY
+***************************/
 @media screen and (min-width: 768px) {
+
+  /**** HEADER ****/
+  /* hero */
   .hero_text p {
     font-size: 22px;
     opacity: .8
+  }
+
+  /**** MAIN ****/
+  /* designed section */
+  .carousel_slide::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .carousel_slide::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    cursor: pointer;
   }
 }
 
