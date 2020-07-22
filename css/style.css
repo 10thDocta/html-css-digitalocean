@@ -381,6 +381,7 @@ div>.service_list:not(:last-child) {
 
 .carousel_text_box img {
   max-height: 50px;
+  max-width: 70%;
   margin-bottom: 15px;
 }
 
