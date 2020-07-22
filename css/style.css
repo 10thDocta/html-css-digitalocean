@@ -107,13 +107,17 @@ main p, footer p {
   width: 150px;
 }
 
-.header_top a {
+.header_top .main_menu>a {
   font-size: 16px;
   font-weight: 500;
 }
 
 .header_top a:hover {
   color: #006AFF;
+}
+
+.header_top .btn {
+  transition: background-color 0.5s ease;
 }
 
 .header_top .btn:hover {
@@ -127,6 +131,73 @@ main p, footer p {
 
 .header_top .btn {
   border: 1px solid;
+}
+
+/* header_top drop_menu */
+.drop_menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: white;
+  line-height: initial;
+}
+
+.header_top [class*="col-lg"] {
+  position: static;
+}
+
+.drop:hover .drop_menu {
+  display: block;
+}
+
+.drop_menu h5 {
+  display: inline-block;
+}
+
+.drop_menu>.container-fluid>.row>[class*="col-lg"] {
+  padding-top: 30px;
+  border: 1px solid #c7c0c0;
+  min-height: 380px;
+}
+
+.drop_menu_product_left {
+  padding-left: 40px;
+}
+
+.drop_menu_product_left li {
+  padding: 12px 0;
+}
+
+/* .drop_menu_product_right .col-lg-4 {
+  margin-bottom: 60px;
+} */
+.drop_menu_product_left span {
+  font-weight: normal;
+  color: #7B86A0;
+}
+
+.drop_menu_product_right .first_li {
+  margin-left: 10px;
+}
+
+.drop_menu_product_right .first_li {
+  margin-left: 10px;
+}
+
+.drop_menu_product_right .first_li img {
+  margin-right: 10px;
+}
+
+.drop_menu_product_right li:not(.first_li) {
+  margin-left: 40px;
+  padding: 3px 0;
+}
+
+.drop_menu_product_right li:last-child {
+  margin-bottom: 20px;
 }
 
 /* hero */
@@ -165,10 +236,20 @@ main p, footer p {
   color: white;
 }
 
+.btn_blue:hover {
+  background-color: #348FFD;
+  color: white;
+}
+
 .btn_white {
   background-color: white;
   color: #626262;
   box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.btn_white:hover {
+  /* background-color: whitesmoke; */
+  box-shadow: 2px 2px 2px 2px #ccc;
 }
 
 .btn_google {
@@ -319,6 +400,7 @@ div>.service_list:not(:last-child) {
 
 #get_start .btn {
   background-color: white;
+  transition: background-color 0.5s ease;
   color: #006AFF;
   margin-top: 5px;
 }
@@ -333,6 +415,10 @@ footer {
   background-color: #031C4E;
   padding-top: 35px;
   padding-bottom: 35px;
+}
+
+footer a:hover {
+  color: white;
 }
 
 footer .row>div {
